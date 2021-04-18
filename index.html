@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Text Customiser</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Kalam'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jua'rel='stylesheet'>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <center><h1>Text Customiser! 💻</h1>
+    <textarea id="text" placeholder="Your text..." cols="30" rows="5" style="font-size: 16px"></textarea>
+    <h2>Customise!</h2>
+    <button onclick="italic()">Italic</button>
+    <button onclick="underline()" id="long1">Underline</button>
+    <button onclick="strikethrough()" id="long2">Strikethrough</button>
+    <button onclick="bold()" id="bold">Bold</button>
+    <button onclick="reset_font_styles()">Reset</button>
+    <h2>Colorise!</h2>
+    <a>Color: </a>
+    <input type="text"  id="the_color" class="input" placeholder="Color...">
+    <button onclick="colorize()">Go!</button><br><br>
+    <button id="hidden" onclick="hide()">Hide Textbox</button>
+    <button onclick="fade()">Fade</button>
+    <button id="hidden" onclick="show()">Show Textbox</button>
+    <h2>Other!</h2>
+    <button onclick="reset_every()" id="long3">Reset Everything</button>
+    <button onclick="updates()" id="long2">See Updates</button>
+    <button onclick="document.getElementById('text').value=''">Clear</button><br><br>
+    <a>Font Size (in px): </a>
+    <input type="text" placeholder="Font size..." id="font_size" class="input">
+    <button onclick="font_size()">Go!</button></center>
+  </body>
+</html>
